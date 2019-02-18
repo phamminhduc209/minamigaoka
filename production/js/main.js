@@ -1,0 +1,1 @@
+!function(a){"use strict";a(window).scroll(function(){a(this).scrollTop()>=200?a("#return-to-top").addClass("td-scroll-up-visible"):a("#return-to-top").removeClass("td-scroll-up-visible")}),a("#return-to-top").click(function(){a("body,html").animate({scrollTop:0},"slow")})}(jQuery);

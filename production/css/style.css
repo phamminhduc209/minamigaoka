@@ -1,0 +1,235 @@
+/* ======================== VARIABLE ======================== */
+/* ======================== FONTS ======================== */
+/* ======================== LIST ======================== */
+/* ======================== URL ======================== */
+/* ======================== RESET ======================== */
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&subset=vietnamese");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700&subset=vietnamese");
+* {
+  padding: 0px;
+  margin: 0px; }
+  *:focus {
+    outline: none; }
+
+a {
+  text-decoration: none;
+  word-wrap: break-word;
+  transition: all 0.25s; }
+  a:hover {
+    text-decoration: none;
+    transition: all 0.25s; }
+  a:focus {
+    outline: none;
+    text-decoration: none;
+    outline-offset: 0; }
+
+button {
+  transition: all 0.25s; }
+  button:hover {
+    transition: all 0.25s; }
+
+img {
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+  vertical-align: middle;
+  border: 0; }
+
+select:focus, button:focus, input:focus {
+  outline: none; }
+
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"],
+textarea, select, input[type="number"],
+input[type="tel"] {
+  padding: 8px 10px;
+  width: 100%;
+  border: none;
+  cursor: pointer; }
+
+ul,
+ol {
+  margin: 0;
+  padding: 0; }
+
+ul li,
+ol li {
+  list-style: none; }
+
+p {
+  margin: 0; }
+
+h1 {
+  margin: 0px;
+  padding: 0px;
+  color: #2b2b2b;
+  font-weight: 700; }
+
+h2 {
+  margin: 0px;
+  padding: 0px;
+  color: #2b2b2b;
+  font-weight: 700; }
+
+h3 {
+  margin: 0px;
+  padding: 0px;
+  color: #2b2b2b;
+  font-weight: 700; }
+
+h4 {
+  margin: 0px;
+  padding: 0px;
+  color: #2b2b2b;
+  font-weight: 700; }
+
+h5 {
+  margin: 0px;
+  padding: 0px;
+  color: #2b2b2b;
+  font-weight: 700; }
+
+h6 {
+  margin: 0px;
+  padding: 0px;
+  color: #2b2b2b;
+  font-weight: 700; }
+
+body {
+  font-family: "Open Sans", sans-serif;
+  color: #616161;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+  background: url("../images/background.png") repeat top center; }
+
+.clearfix {
+  clear: both; }
+
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table; }
+
+.clearfix:after {
+  clear: both; }
+
+.upper-text {
+  text-transform: uppercase; }
+
+/* ======================== FONTS ======================== */
+/* ======================== MIXIN ======================== */
+/* ======================== FONTS ======================== */
+.header {
+  position: relative;
+  background-size: 100%; }
+  .header .wrap-header {
+    max-width: 1120px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center; }
+  .header .header-menu {
+    margin-left: auto; }
+    .header .header-menu .memu-items .memu-item {
+      float: left;
+      padding: 10px 30px;
+      position: relative;
+      background: transparent;
+      transition: all 0.25s; }
+      .header .header-menu .memu-items .memu-item:before {
+        content: "";
+        display: block;
+        border-right: 3px solid #007a1f;
+        margin: 0 auto;
+        height: 30px;
+        position: absolute;
+        top: 50%;
+        -webkit-transform: translate(0, -50%);
+        -ms-transform: translate(0, -50%);
+        transform: translate(0, -50%);
+        left: 0; }
+      .header .header-menu .memu-items .memu-item:first-child:before {
+        display: none; }
+      .header .header-menu .memu-items .memu-item a {
+        color: #385933;
+        display: block;
+        text-align: center;
+        font-size: 15px;
+        font-weight: bold; }
+        .header .header-menu .memu-items .memu-item a .icon {
+          display: block;
+          margin-bottom: 5px; }
+      .header .header-menu .memu-items .memu-item.memu-item:hover {
+        transition: all 0.25s; }
+        .header .header-menu .memu-items .memu-item.memu-item:hover > a {
+          color: #FFF; }
+        .header .header-menu .memu-items .memu-item.memu-item:hover:before {
+          border-color: transparent; }
+        .header .header-menu .memu-items .memu-item.memu-item:hover .memu-item-child {
+          opacity: 1;
+          visibility: visible;
+          -webkit-transform: translate(0, 0px);
+          -ms-transform: translate(0, 0px);
+          -o-transform: translate(0, 0px);
+          transform: translate(0, 0px);
+          -webkit-transition: 0.3s;
+          -o-transition: 0.3s;
+          transition: 0.3s; }
+      .header .header-menu .memu-items .memu-item.memu-item-home:hover {
+        background: #e9450a; }
+      .header .header-menu .memu-items .memu-item .memu-item-child {
+        position: absolute;
+        left: 0;
+        opacity: 0;
+        visibility: hidden;
+        min-width: 300px;
+        background: #FFF;
+        border: 1px solid transparent;
+        -webkit-transform: translate(0, 10px);
+        -ms-transform: translate(0, 10px);
+        -o-transform: translate(0, 10px);
+        transform: translate(0, 10px);
+        -webkit-transition: 0.3s;
+        -o-transition: 0.3s;
+        transition: 0.3s; }
+        .header .header-menu .memu-items .memu-item .memu-item-child li {
+          background: transparent;
+          padding: 10px 30px; }
+          .header .header-menu .memu-items .memu-item .memu-item-child li a {
+            text-align: left;
+            color: #000;
+            font-weight: normal;
+            word-wrap: unset; }
+      .header .header-menu .memu-items .memu-item.memu-item-about:hover {
+        background: #91b136; }
+      .header .header-menu .memu-items .memu-item.memu-item-about .memu-item-child {
+        border-color: #91b136; }
+        .header .header-menu .memu-items .memu-item.memu-item-about .memu-item-child li:hover {
+          background: #91b136; }
+      .header .header-menu .memu-items .memu-item.memu-item-summary:hover {
+        background: #0085c2; }
+      .header .header-menu .memu-items .memu-item.memu-item-summary .memu-item-child {
+        border-color: #0085c2; }
+        .header .header-menu .memu-items .memu-item.memu-item-summary .memu-item-child li:hover {
+          background: #0085c2; }
+      .header .header-menu .memu-items .memu-item.memu-item-education:hover {
+        background: #ffc700; }
+      .header .header-menu .memu-items .memu-item.memu-item-education .memu-item-child {
+        border-color: #ffc700; }
+        .header .header-menu .memu-items .memu-item.memu-item-education .memu-item-child li:hover {
+          background: #ffc700; }
+      .header .header-menu .memu-items .memu-item.memu-item-event:hover {
+        background: #ef98bc; }
+      .header .header-menu .memu-items .memu-item.memu-item-event .memu-item-child {
+        border-color: #ef98bc; }
+        .header .header-menu .memu-items .memu-item.memu-item-event .memu-item-child li:hover {
+          background: #ef98bc; }
+      .header .header-menu .memu-items .memu-item.memu-item-support:hover {
+        background: #e68f2b; }
+
+/* ======================== HEADER ======================== */
+/* ======================== Page ======================== */
+/* ======================== FOOTER ======================== */

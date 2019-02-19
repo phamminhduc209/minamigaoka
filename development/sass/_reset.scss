@@ -7,11 +7,11 @@
 }
 a {
 	text-decoration: none;
-    word-wrap: break-word;
+	word-wrap: break-word;
 	transition: all 0.25s;
 	&:hover {
 		text-decoration: none;
-  		transition: all 0.25s;
+		transition: all 0.25s;
 	}
 	&:focus {
 		outline: none;
@@ -26,9 +26,9 @@ button {
 	}
 }
 img {
-  max-width: 100%;
-  height: auto;
-  margin: 0 auto;
+	max-width: 100%;
+	height: auto;
+	margin: 0 auto;
 	vertical-align: middle;
 	border: 0;
 }
@@ -40,19 +40,19 @@ input[type="password"],
 input[type="search"],
 textarea, select, input[type="number"],
 input[type="tel"] {
-  padding: 8px 10px;
-  width: 100%;
-  border: none;
-  cursor: pointer;
+	padding: 8px 10px;
+	width: 100%;
+	border: none;
+	cursor: pointer;
 }
 ul,
 ol {
-  margin: 0;
-  padding: 0;
+	margin: 0;
+	padding: 0;
 }
 ul li,
 ol li {
-  list-style: none;
+	list-style: none;
 }
 p { 
 	margin: 0;
@@ -70,7 +70,7 @@ p {
 body {
 	font-family: $fontOpensans;
 	color: #616161;
-    font-weight: 400;
+	font-weight: 400;
 	font-size: 14px;
 	line-height: 1.7;
 	background: url('../images/background.png') repeat top center;
@@ -85,7 +85,4 @@ body {
 }
 .clearfix:after {
 	clear: both;
-}
-.upper-text {
-    text-transform: uppercase;
 }

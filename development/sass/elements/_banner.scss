@@ -1,0 +1,15 @@
+.block-banner {
+    position: relative;
+    .block-banner-des {
+        background: url('../images/craft-catch.png') no-repeat top center;
+        background-size: 100%;
+        height: 440px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        right: 0;
+        bottom: -339px;
+        left: 0;
+    }
+}

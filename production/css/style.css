@@ -117,15 +117,22 @@ body {
 .clearfix:after {
   clear: both; }
 
-.upper-text {
-  text-transform: uppercase; }
-
 /* ======================== FONTS ======================== */
 /* ======================== MIXIN ======================== */
 /* ======================== FONTS ======================== */
+.container {
+  width: 1200px;
+  margin: 0 auto; }
+
+.upper-text {
+  text-transform: uppercase; }
+
+/* ======================== HEADER ======================== */
 .header {
   position: relative;
-  background-size: 100%; }
+  background-size: 100%;
+  z-index: 99;
+  margin-bottom: 20px; }
   .header .wrap-header {
     max-width: 1120px;
     margin: 0 auto;
@@ -230,6 +237,19 @@ body {
       .header .header-menu .memu-items .memu-item.memu-item-support:hover {
         background: #e68f2b; }
 
-/* ======================== HEADER ======================== */
-/* ======================== Page ======================== */
+/* ======================== ELEMENTS ======================== */
+.block-banner {
+  position: relative; }
+  .block-banner .block-banner-des {
+    background: url("../images/craft-catch.png") no-repeat top center;
+    background-size: 100%;
+    height: 440px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 0;
+    bottom: -339px;
+    left: 0; }
+
 /* ======================== FOOTER ======================== */

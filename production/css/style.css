@@ -121,11 +121,35 @@ body {
 /* ======================== MIXIN ======================== */
 /* ======================== FONTS ======================== */
 .container {
-  width: 1200px;
+  width: 1120px;
   margin: 0 auto; }
 
 .upper-text {
   text-transform: uppercase; }
+
+.text-center {
+  text-align: center; }
+
+.block-item-home {
+  margin-bottom: 50px; }
+  .block-item-home .block-title {
+    margin-bottom: 20px; }
+
+.block-item-home1 ul {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .block-item-home1 ul li {
+    margin: 0 15px; }
+
+.block-usagi {
+  position: relative;
+  overflow: hidden; }
+  .block-usagi .block-wrap {
+    background: url("../images/craft-1920x500.png") no-repeat top center;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 500px; }
 
 /* ======================== HEADER ======================== */
 .header {
@@ -239,11 +263,12 @@ body {
 
 /* ======================== ELEMENTS ======================== */
 .block-banner {
-  position: relative; }
-  .block-banner .block-banner-des {
-    background: url("../images/craft-catch.png") no-repeat top center;
+  position: relative;
+  margin-bottom: 280px; }
+  .block-banner .block-banner-box {
+    background: url("../images/craft-catch02.png") no-repeat top center;
     background-size: 100%;
-    height: 440px;
+    height: 426px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -251,5 +276,15 @@ body {
     right: 0;
     bottom: -339px;
     left: 0; }
+    .block-banner .block-banner-box .block-banner-des {
+      width: 450px;
+      margin: 0 auto;
+      height: 170px;
+      overflow: hidden; }
+      .block-banner .block-banner-box .block-banner-des p {
+        color: #FFF;
+        font-size: 18px;
+        font-weight: bold;
+        text-align: center; }
 
 /* ======================== FOOTER ======================== */

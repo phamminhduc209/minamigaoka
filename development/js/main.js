@@ -1,5 +1,8 @@
 (function($){
-	"use strict";
+    "use strict";
+    /*  [ Sticky Menu ] */
+    // $('.stick-header').sticky({ topSpacing: 0 });
+    
     // ===== Scroll to Top ==== 
     $(window).scroll(function () {
         if ($(this).scrollTop() >= 200) {
@@ -13,5 +16,6 @@
             scrollTop: 0
         }, 'slow');
     });
+    
 
 })(jQuery); // End of use strict

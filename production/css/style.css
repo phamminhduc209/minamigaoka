@@ -132,24 +132,111 @@ body {
 
 .block-item-home {
   margin-bottom: 50px; }
-  .block-item-home .block-title {
-    margin-bottom: 20px; }
-
-.block-item-home1 ul {
-  display: flex;
-  align-items: center;
-  justify-content: center; }
-  .block-item-home1 ul li {
-    margin: 0 15px; }
-
-.block-usagi {
-  position: relative;
-  overflow: hidden; }
-  .block-usagi .block-wrap {
+  .block-item-home .block-wrap {
     background: url("../images/craft-1920x500.png") no-repeat top center;
     background-size: 100% 100%;
     width: 100%;
-    height: 500px; }
+    height: 500px;
+    padding: 30px 0; }
+  .block-item-home .block-title {
+    margin-bottom: 20px; }
+    .block-item-home .block-title span {
+      display: inline-block;
+      vertical-align: middle; }
+    .block-item-home .block-title .title {
+      font-size: 35px;
+      color: #FF4A57; }
+
+.block-item-topics ul {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .block-item-topics ul li {
+    margin: 0 15px; }
+
+.block-usagi .usagi-items {
+  display: flex;
+  justify-content: center; }
+  .block-usagi .usagi-items .usagi-item-img:first-child {
+    margin-top: -65px;
+    margin-left: 75px; }
+  .block-usagi .usagi-items .usagi-item-txt {
+    width: 345px;
+    margin: 80px 30px 0 40px; }
+    .block-usagi .usagi-items .usagi-item-txt p {
+      color: #000;
+      font-size: 23px;
+      letter-spacing: 3px; }
+    .block-usagi .usagi-items .usagi-item-txt a {
+      background: #E68F2B;
+      color: #FFF;
+      font-size: 18px;
+      display: inline-block;
+      width: 223px;
+      height: 61px;
+      text-align: center;
+      line-height: 61px;
+      margin-top: 30px; }
+      .block-usagi .usagi-items .usagi-item-txt a:hover {
+        background: #e19953; }
+
+.block-tori .tori-items {
+  display: flex;
+  justify-content: center; }
+  .block-tori .tori-items .tori-item-img:first-child {
+    margin-top: -65px; }
+  .block-tori .tori-items .tori-item-img:last-child {
+    margin-top: -100px; }
+  .block-tori .tori-items .tori-item-txt {
+    width: 387px;
+    margin: 70px 0 0 -25px;
+    text-align: right; }
+    .block-tori .tori-items .tori-item-txt p {
+      color: #000;
+      font-size: 23px;
+      letter-spacing: 3px; }
+    .block-tori .tori-items .tori-item-txt a {
+      background: #E68F2B;
+      color: #FFF;
+      font-size: 18px;
+      display: inline-block;
+      width: 223px;
+      height: 61px;
+      text-align: center;
+      line-height: 61px;
+      margin-top: 30px; }
+      .block-tori .tori-items .tori-item-txt a:hover {
+        background: #e19953; }
+
+.block-guidance .guidance-items {
+  text-align: center; }
+  .block-guidance .guidance-items .guidance-item {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 10px; }
+    .block-guidance .guidance-items .guidance-item .guidance-item-wrap {
+      border-radius: 50%;
+      background: url("../images/home-title-guidance-bg.png") no-repeat center;
+      width: 284px;
+      height: 284px;
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+      .block-guidance .guidance-items .guidance-item .guidance-item-wrap .guidance-item-box {
+        width: 90%;
+        height: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background: #FFF;
+        border-radius: 50%;
+        text-align: center; }
+        .block-guidance .guidance-items .guidance-item .guidance-item-wrap .guidance-item-box .text {
+          color: #385933;
+          font-size: 17px;
+          font-weight: bold;
+          letter-spacing: 1.5px; }
 
 /* ======================== HEADER ======================== */
 .header {
@@ -158,15 +245,24 @@ body {
   z-index: 99;
   margin-bottom: 20px; }
   .header .wrap-header {
-    max-width: 1120px;
+    width: 1120px;
     margin: 0 auto;
     display: flex;
     align-items: center; }
+  .header .is-sticky .stick-header {
+    background: url(../images/global-bg-stick.png) repeat;
+    display: flex;
+    z-index: 99;
+    -webkit-box-shadow: 0px 5px 10px 0px black;
+    -moz-box-shadow: 0px 5px 10px 0px black;
+    box-shadow: 0px 5px 10px 0px black; }
+  .header .header-logo {
+    width: 225px; }
   .header .header-menu {
     margin-left: auto; }
     .header .header-menu .memu-items .memu-item {
       float: left;
-      padding: 10px 30px;
+      padding: 10px 25px;
       position: relative;
       background: transparent;
       transition: all 0.25s; }
@@ -188,7 +284,7 @@ body {
         color: #385933;
         display: block;
         text-align: center;
-        font-size: 15px;
+        font-size: 14px;
         font-weight: bold; }
         .header .header-menu .memu-items .memu-item a .icon {
           display: block;
@@ -213,6 +309,7 @@ body {
         background: #e9450a; }
       .header .header-menu .memu-items .memu-item .memu-item-child {
         position: absolute;
+        top: 100%;
         left: 0;
         opacity: 0;
         visibility: hidden;
@@ -239,43 +336,41 @@ body {
       .header .header-menu .memu-items .memu-item.memu-item-about .memu-item-child {
         border-color: #91b136; }
         .header .header-menu .memu-items .memu-item.memu-item-about .memu-item-child li:hover {
-          background: #91b136; }
+          background: #C8D89A; }
       .header .header-menu .memu-items .memu-item.memu-item-summary:hover {
         background: #0085c2; }
       .header .header-menu .memu-items .memu-item.memu-item-summary .memu-item-child {
         border-color: #0085c2; }
         .header .header-menu .memu-items .memu-item.memu-item-summary .memu-item-child li:hover {
-          background: #0085c2; }
+          background: #80C2E0; }
       .header .header-menu .memu-items .memu-item.memu-item-education:hover {
         background: #ffc700; }
       .header .header-menu .memu-items .memu-item.memu-item-education .memu-item-child {
         border-color: #ffc700; }
         .header .header-menu .memu-items .memu-item.memu-item-education .memu-item-child li:hover {
-          background: #ffc700; }
+          background: #FFE380; }
       .header .header-menu .memu-items .memu-item.memu-item-event:hover {
         background: #ef98bc; }
       .header .header-menu .memu-items .memu-item.memu-item-event .memu-item-child {
         border-color: #ef98bc; }
         .header .header-menu .memu-items .memu-item.memu-item-event .memu-item-child li:hover {
-          background: #ef98bc; }
+          background: #F6CBDD; }
       .header .header-menu .memu-items .memu-item.memu-item-support:hover {
         background: #e68f2b; }
 
 /* ======================== ELEMENTS ======================== */
 .block-banner {
   position: relative;
-  margin-bottom: 280px; }
+  margin-bottom: 50px; }
   .block-banner .block-banner-box {
-    background: url("../images/craft-catch02.png") no-repeat top center;
+    background: url("../images/craft-catch.png") no-repeat top center;
     background-size: 100%;
     height: 426px;
     display: flex;
     justify-content: center;
     align-items: center;
-    position: absolute;
-    right: 0;
-    bottom: -339px;
-    left: 0; }
+    margin-top: -99px;
+    position: relative; }
     .block-banner .block-banner-box .block-banner-des {
       width: 450px;
       margin: 0 auto;

@@ -1,17 +1,15 @@
 .block-banner {
     position: relative;
-    margin-bottom: 280px;
+    margin-bottom: 50px;
     .block-banner-box {
-        background: url('../images/craft-catch02.png') no-repeat top center;
+        background: url('../images/craft-catch.png') no-repeat top center;
         background-size: 100%;
         height: 426px;
         display: flex;
         justify-content: center;
         align-items: center;
-        position: absolute;
-        right: 0;
-        bottom: -339px;
-        left: 0;
+        margin-top: -99px;
+        position: relative;
         .block-banner-des {
             width: 450px;
             margin: 0 auto;

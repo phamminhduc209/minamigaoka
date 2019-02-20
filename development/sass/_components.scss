@@ -11,11 +11,27 @@
 
 .block-item-home {
     margin-bottom: 50px;
+    .block-wrap {
+        background: url('../images/craft-1920x500.png') no-repeat top center;
+        background-size: 100% 100%;
+        width: 100%;
+        height: 500px;
+        padding: 30px 0;
+    }
     .block-title {
         margin-bottom: 20px;
+        span {
+            display: inline-block;
+            vertical-align: middle;
+        }
+        .title {
+            font-size: 35px;
+            color: #FF4A57;
+        }
     }
 }
-.block-item-home1 {
+
+.block-item-topics {
     ul {
         display: flex;
         align-items: center;
@@ -27,12 +43,113 @@
 }
 
 .block-usagi {
-    position: relative;
-    overflow: hidden;
-    .block-wrap {
-        background: url('../images/craft-1920x500.png') no-repeat top center;
-        background-size: 100% 100%;
-        width: 100%;
-        height: 500px;
+    .usagi-items {
+        display: flex;
+        justify-content: center;
+        .usagi-item-img {
+            &:first-child {
+                margin-top: -65px;
+                margin-left: 75px;
+            }
+        }
+        .usagi-item-txt {
+                width: 345px;
+                margin: 80px 30px 0 40px;
+            p {
+                color: #000;
+                font-size: 23px;
+                letter-spacing: 3px;
+            }
+            a {
+                background: #E68F2B;
+                color: #FFF;
+                font-size: 18px;
+                display: inline-block;
+                width: 223px;
+                height: 61px;
+                text-align: center;
+                line-height: 61px;
+                margin-top: 30px;
+                &:hover {
+                    background: #e19953;
+                }
+            }
+        }
+    }
+}
+
+.block-tori {
+    .tori-items {
+        display: flex;
+        justify-content: center;
+        .tori-item-img {
+            &:first-child {
+                margin-top: -65px;
+            }
+            &:last-child {
+                margin-top: -100px;
+            }
+        }
+        .tori-item-txt {
+            width: 387px;
+            margin: 70px 0 0 -25px;
+            text-align: right;
+            p {
+                color: #000;
+                font-size: 23px;
+                letter-spacing: 3px;
+            }
+            a {
+                background: #E68F2B;
+                color: #FFF;
+                font-size: 18px;
+                display: inline-block;
+                width: 223px;
+                height: 61px;
+                text-align: center;
+                line-height: 61px;
+                margin-top: 30px;
+                &:hover {
+                    background: #e19953;
+                }
+            }
+        }
+    }
+}
+
+.block-guidance {
+    .guidance-items {
+        text-align: center;
+        .guidance-item {
+            display: inline-block;
+            vertical-align: middle;
+            margin: 0 10px;
+            .guidance-item-wrap {
+                border-radius: 50%;
+                background: url('../images/home-title-guidance-bg.png') no-repeat center;
+                width: 284px;
+                height: 284px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                .guidance-item-box {
+                    width: 90%;
+                    height: 90%;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    background: #FFF;
+                    border-radius: 50%;
+                    text-align: center;
+                    .text {
+                        color: #385933;
+                        font-size: 17px;
+                        font-weight: bold;
+                        letter-spacing: 1.5px;
+                    }
+                }
+            }
+        }
     }
 }

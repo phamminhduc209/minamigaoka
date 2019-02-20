@@ -10,7 +10,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=1200">
-    <title>Minamigaoka -  Home</title>
+    <title>Minamigaoka -  About</title>
     <meta name="description" content="">
     <meta name="keywords" content="">
     <meta name="robots" content="index,follow" />
@@ -22,6 +22,7 @@
     <link href="css/font-awesome.css" rel="stylesheet">
     <!-- Css Style -->
     <link href="css/style.css" rel="stylesheet">
+    <!-- <link href="css/bootstrap.min.css" rel="stylesheet"> -->
     
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -40,8 +41,16 @@
         <!-- Header -->
 
         <section class="wrapper">
-            include "htmlEml/banner.html"
-            include "htmlEml/block-item-home.html"
+            <div class="page-child">
+                <div class="container">
+                    <div class="page-left">
+                        include "htmlEml/about.html"
+                    </div>
+                    <div class="page-right">
+                        include "htmlEml/right-page.html"
+                    </div>
+                </div>
+            </div>
         </section>
         <!-- Wrapper -->
 

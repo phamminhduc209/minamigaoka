@@ -1,25 +1,27 @@
 .block-banner {
     position: relative;
     margin-bottom: 50px;
-    .block-banner-box {
-        background: url('../images/craft-catch.png') no-repeat top center;
-        background-size: 100%;
-        height: 426px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+    .block-banner-wrap {
         margin-top: -99px;
         position: relative;
-        .block-banner-des {
-            width: 450px;
-            margin: 0 auto;
-            height: 170px;
-            overflow: hidden;
-            p {
-                color: #FFF;
-                font-size: 18px;
-                font-weight: bold;
-                text-align: center;
+        .block-banner-box {
+            background: url('../images/craft-1920x500.png') no-repeat top center;
+            background-size: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 10px 0 20px;
+            .block-banner-des {
+                width: 450px;
+                margin: 0 auto;
+                overflow: hidden;
+                p {
+                    color: #385933;
+                    font-size: 18px;
+                    font-weight: bold;
+                    text-align: center;
+                    letter-spacing: 10px;
+                }
             }
         }
     }

@@ -7,10 +7,11 @@
 <!--[if (gt IE 9)|!(IE)]><!-->
 <html lang="ja">
 <!--<![endif]-->
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=1200">
-    <title>Minamigaoka -  Home</title>
+    <title>Minamigaoka - Education Childcare Contents</title>
     <meta name="description" content="">
     <meta name="keywords" content="">
     <meta name="robots" content="index,follow" />
@@ -22,7 +23,8 @@
     <link href="css/font-awesome.css" rel="stylesheet">
     <!-- Css Style -->
     <link href="css/style.css" rel="stylesheet">
-    
+    <!-- <link href="css/bootstrap.min.css" rel="stylesheet"> -->
+
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -31,6 +33,7 @@
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 </head>
+
 <body>
 
     <section id="page-container">
@@ -40,8 +43,18 @@
         <!-- Header -->
 
         <section class="wrapper">
-            include "htmlEml/banner.html"
-            include "htmlEml/block-item-home.html"
+            <div class="page-child">
+                <div class="container">
+                    <div class="page-left">
+                        include "htmlEml/education.html"
+                    </div>
+                    <!-- page-left -->
+                    <div class="page-right">
+                        include "htmlEml/right-page.html"
+                    </div>
+                    <!-- page-right -->
+                </div>
+            </div>
         </section>
         <!-- Wrapper -->
 
@@ -59,8 +72,10 @@
     <!-- jQuery -->
     <script src="js/jquery.min.js"></script>
     <script src="libs/sticky/jquery.sticky.js"></script>
-    <script src="http://maps.google.com/maps/api/js?sensor=false&amp;key=AIzaSyArBr1KOTUyMjVn4sTypteAH44jNHodmUA"></script>
+    <script
+        src="http://maps.google.com/maps/api/js?sensor=false&amp;key=AIzaSyArBr1KOTUyMjVn4sTypteAH44jNHodmUA"></script>
     <!-- JS main -->
     <script src="js/main.js"></script>
 </body>
+
 </html>

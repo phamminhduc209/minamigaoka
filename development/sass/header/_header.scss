@@ -1,7 +1,6 @@
 .header {
     // background: url('../images/top-bar.png') no-repeat top center;
     position: relative;
-    background-size: 100%;
     z-index: 99;
     margin-bottom: 20px;
     .wrap-header {
@@ -90,7 +89,7 @@
                     left: 0;
                     opacity: 0;
                     visibility: hidden;
-                    min-width: 300px;
+                    min-width: 260px;
                     background: #FFF;
                     border: 1px solid transparent;
                     -webkit-transform: translate(0, 10px);

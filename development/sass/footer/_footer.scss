@@ -4,13 +4,17 @@
         .footer-wrap-box-left,
         .footer-wrap-box-right {
             float: left;
-            width: 48%;
         }
         .footer-wrap-box-left {
-            margin-right: 1%; 
+            margin: 0 15px;
+            width: 520px;
         }
         .footer-wrap-box-right {
-            margin-left: 1%;
+            width: -moz-calc(100% - 565px);
+            width: -webkit-calc(100% - 565px);
+            width: -o-calc(100% - 565px);
+            width: calc(100% - 565px);
+            margin-left: 15px;
         }
     }
     .footer-about {
@@ -24,7 +28,7 @@
         margin-top: 5px;
     }
     .footer-phone {
-        margin-left: 45px;
+        margin-left: 20px;
         li {
             display: inline-block;
             vertical-align: middle;

@@ -83,8 +83,12 @@
         .block-banner-box {
             background: url('../images/craft-1920x500.png') no-repeat top center;
             background-size: 100%;
+            display: -webkit-flex;
+            display: -moz-flex;
+            display: -ms-flex;
+            display: -o-flex;
             display: flex;
-            justify-content: center;
+            justify-content: space-around; 
             align-items: center;
             padding: 10px 0 20px;
             .block-banner-des {
